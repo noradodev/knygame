@@ -8,7 +8,7 @@ const fruits = ["lose","Free Hug Ticket", "Free Kiss Ticket", "Free Date Ticket"
 
 img_pot.forEach((pot) => {
     pot.addEventListener('click', () => {
-        pot.src = "break.png";
+        pot.src = "img/break.png";
         let random = Math.floor(Math.random() * fruits.length);
         popup__container.classList.add('active');
         if (fruits[random] == fruits[0]) {
