@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  background-color: rgb(243, 152, 113);
+  overflow: hidden;
+}
+div {
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: url("img/bg1.png") repeat-x top left,
+    url("img/bg1.png") repeat-x bottom left;
+  background-size: 10%;
+}
+.kny__img {
+  width: 30rem;
+  background: url("img/kny.png") no-repeat center;
+  background-size: 100%;
+}
+.reward__img {
+  width: 20rem;
+}
+.game__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.popup__container {
+  display: none;
+  position: fixed;
+  background-color: rgb(245, 216, 179, 0.9);
+  padding: 5% 10%;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease-in-out;
+  border-radius: 20px;
+}
+.popup__title_container h1 {
+  margin: 0;
+}
+.popup__title_container p {
+  margin: 0;
+}
+.popup__container.active {
+  display: block;
+}
+.btn__playagain {
+  padding: 20px 30px;
+  background-color: rgb(179, 166, 96);
+  color: white;
+  border: 0px;
+  cursor: pointer;
+}
+.title__text {
+  text-align: center;
+  color: rgb(255, 229, 164);
+}
+.title__text h1 {
+  font-family: "Battambang", cursive;
+  margin: 0;
+  padding: 0;
+}
+.description {
+  color: aliceblue;
+  width: 60%;
+  font-family: "Battambang", cursive;
+  background-color: rgb(255, 229, 164, 0.3);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.pot__container {
+  display: flex;
+}
+.howto {
+  display: flex;
+  justify-content: center;
+}
+.text-howto {
+  color: rgb(66, 74, 82);
+}
+.text-howto::before {
+  content: "👉";
+}
+.img__pot {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  background-size: 100%;
+  cursor: pointer;
+  animation: potAnimate 1s infinite linear;
+}
+@keyframes potAnimate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
